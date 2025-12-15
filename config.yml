@@ -1,1414 +1,333 @@
-mode: rule
-redir-port: 7892
-mixed-port: 7897
-allow-lan: false
-log-level: info
-ipv6: true
-external-controller: ''
-secret: set-your-secret
-unified-delay: true
-dns:
-  enable: false
-  ipv6: true
-  default-nameserver:
-  - 223.5.5.5
-  - 119.29.29.29
-  - 8.8.8.8
-  enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
-  use-hosts: true
-  nameserver:
-  - https://doh.pub/dns-query
-  - https://dns.alidns.com/dns-query
-  fallback:
-  - https://doh.dns.sb/dns-query
-  - https://dns.cloudflare.com/dns-query
-  - https://dns.twnic.tw/dns-query
-  - tls://8.8.4.4:853
-  fallback-filter:
-    geoip: true
-    ipcidr:
-    - 240.0.0.0/4
-    - 0.0.0.0/32
-experimental:
-  ignore-resolve-fail: true
-external-controller-cors:
-  allow-private-network: true
-  allow-origins:
-  - tauri://localhost
-  - http://tauri.localhost
-  - https://yacd.metacubex.one
-  - https://metacubex.github.io
-  - https://board.zash.run.place
-tun:
-  auto-detect-interface: true
-  auto-route: true
-  device: Mihomo
-  dns-hijack:
-  - any:53
-  mtu: 1500
-  stack: system
-  strict-route: false
-  enable: false
-external-controller-pipe: \\.\pipe\verge-mihomo
-proxies:
-- name: Hong Kong-01
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56201
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Hong Kong-02
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56202
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Hong Kong-03
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56203
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Hong Kong-04
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56204
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Hong Kong-05
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56205
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Hong Kong-06
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56206
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Hong Kong-07
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56207
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Hong Kong-08
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56208
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Hong Kong-09
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56209
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Hong Kong-10
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56210
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Hong Kong-11
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56211
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Hong Kong-12
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56212
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Hong Kong-13
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56213
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Hong Kong-14
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56214
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Hong Kong-15
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56215
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Hong Kong-16
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56216
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Hong Kong-17
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56217
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Hong Kong-18
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56218
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Hong Kong-19
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56219
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Hong Kong-20
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56220
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Taiwan-01
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56221
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Taiwan-02
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56222
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Taiwan-03
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56223
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Taiwan-04
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56224
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Taiwan-05
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56225
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Taiwan-06
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56226
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Taiwan-07
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56227
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Taiwan-08
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56228
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Taiwan-09
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56229
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Taiwan-10
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56230
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Japan-01
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56231
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Japan-02
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56232
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Japan-03
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56233
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Japan-04
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56234
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Japan-05
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56235
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Japan-06
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56236
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Japan-07
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56237
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Japan-08
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56238
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Japan-09
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56239
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Japan-10
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56240
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Singapore-01
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56241
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Singapore-02
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56242
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Singapore-03
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56243
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Singapore-04
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56244
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Singapore-05
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56245
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Singapore-06
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56246
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Singapore-07
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56247
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Singapore-08
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56248
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Singapore-09
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56249
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Singapore-10
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56250
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: USA-01
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56251
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: USA-02
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56252
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: USA-03
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56253
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: USA-04
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56254
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: USA-05
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56255
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: USA-06
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56256
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: USA-07
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56257
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: USA-08
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56258
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: USA-09
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56259
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: USA-10
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56260
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: UK-01
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56261
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: UK-02
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56262
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: UK-03
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56263
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: UK-04
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56264
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: UK-05
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56265
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Malaysia-01
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56266
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Malaysia-02
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56267
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Malaysia-03
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56268
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Malaysia-04
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56269
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Malaysia-05
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56270
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Turkey-01
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56297
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Turkey-02
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56298
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Argentina-01
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56299
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: Argentina-02
-  type: trojan
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56300
-  password: 03d61671-df4b-3df0-8e2b-c31df0aed8b1
-  udp: true
-  skip-cert-verify: true
-- name: '[SS] Hong Kong-01'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56001
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Hong Kong-02'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56002
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Hong Kong-03'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56003
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Hong Kong-04'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56004
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Hong Kong-05'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56005
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Hong Kong-06'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56006
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Hong Kong-07'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56007
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Hong Kong-08'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56008
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Hong Kong-09'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56009
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Hong Kong-10'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56010
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Hong Kong-11'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56011
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Hong Kong-12'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56012
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Hong Kong-13'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56013
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Hong Kong-14'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56014
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Hong Kong-15'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56015
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Hong Kong-16'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56016
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Hong Kong-17'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56017
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Hong Kong-18'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56018
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Hong Kong-19'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56019
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Hong Kong-20'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56020
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Taiwan-01'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56021
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Taiwan-02'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56022
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Taiwan-03'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56023
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Taiwan-04'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56024
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Taiwan-05'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56025
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Taiwan-06'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56026
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Taiwan-07'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56027
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Taiwan-08'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56028
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Taiwan-09'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56029
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Taiwan-10'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56030
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Japan-01'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56031
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Japan-02'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56032
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Japan-03'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56033
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Japan-04'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56034
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Japan-05'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56035
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Japan-06'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56036
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Japan-07'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56037
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Japan-08'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56038
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Japan-09'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56039
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Japan-10'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56040
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Singapore-01'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56041
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Singapore-02'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56042
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Singapore-03'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56043
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Singapore-04'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56044
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Singapore-05'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56045
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Singapore-06'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56046
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Singapore-07'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56047
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Singapore-08'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56048
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Singapore-09'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56049
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Singapore-10'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56050
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] USA-01'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56051
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] USA-02'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56052
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] USA-03'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56053
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] USA-04'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56054
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] USA-05'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56055
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] USA-06'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56056
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] USA-07'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56057
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] USA-08'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56058
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] USA-09'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56059
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] USA-10'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56060
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] UK-01'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56061
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] UK-02'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56062
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] UK-03'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56063
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] UK-04'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56064
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] UK-05'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56065
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Malaysia-01'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56066
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Malaysia-02'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56067
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Malaysia-03'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56068
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Malaysia-04'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56069
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Malaysia-05'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56070
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Turkey-01'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56097
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Turkey-02'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56098
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Argentina-01'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56099
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
-- name: '[SS] Argentina-02'
-  type: ss
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  port: 56100
-  cipher: chacha20-ietf-poly1305
-  password: 2VZWUc
-  udp: true
+proxy-providers:
+  provider1:
+    url: "https://fba02.fbsubcn01.cc:2096/flydsubal/oydgt5izlbyds8wm?clash=1&extend=1"
+    type: http
+    interval: 86400
+    health-check: {enable: true,url: "https://www.gstatic.com/generate_204",interval: 300}
+    override:
+      additional-prefix: "[FlyingBird]"
 proxy-groups:
-- name: 节点选择
-  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Proxy.png
-  type: select
-  proxies:
-  - 自动选择
-  - 香港节点
-  - 台湾节点
-  - 狮城节点
-  - 日本节点
-  - 美国节点
-  - 韩国节点
-  - 手动切换
-  - DIRECT
-- name: 手动切换
-  icon: https://testingcf.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/select.png
-  include-all: true
-  type: select
-- name: 自动选择
-  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Auto.png
-  type: url-test
-  include-all: true
-  interval: 300
-  tolerance: 50
-- name: 电报消息
-  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Telegram.png
-  type: select
-  proxies:
-  - 节点选择
-  - 自动选择
-  - 狮城节点
-  - 香港节点
-  - 台湾节点
-  - 日本节点
-  - 美国节点
-  - 韩国节点
-  - 手动切换
-  - DIRECT
-- name: OpenAi
-  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bot.png
-  type: select
-  proxies:
-  - 节点选择
-  - 自动选择
-  - 狮城节点
-  - 香港节点
-  - 台湾节点
-  - 日本节点
-  - 美国节点
-  - 韩国节点
-  - 手动切换
-  - DIRECT
-- name: 油管视频
-  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/YouTube.png
-  type: select
-  proxies:
-  - 节点选择
-  - 自动选择
-  - 狮城节点
-  - 香港节点
-  - 台湾节点
-  - 日本节点
-  - 美国节点
-  - 韩国节点
-  - 手动切换
-  - DIRECT
-- name: 奈飞视频
-  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Netflix.png
-  type: select
-  proxies:
-  - 节点选择
-  - 自动选择
-  - 奈飞节点
-  - 狮城节点
-  - 香港节点
-  - 台湾节点
-  - 日本节点
-  - 美国节点
-  - 韩国节点
-  - 手动切换
-  - DIRECT
-- name: 巴哈姆特
-  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bahamut.png
-  type: select
-  proxies:
-  - 台湾节点
-  - 节点选择
-  - 手动切换
-  - DIRECT
-- name: 哔哩哔哩
-  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/bilibili.png
-  type: select
-  proxies:
-  - 全球直连
-  - 台湾节点
-  - 香港节点
-- name: 国外媒体
-  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/ForeignMedia.png
-  type: select
-  proxies:
-  - 节点选择
-  - 自动选择
-  - 香港节点
-  - 台湾节点
-  - 狮城节点
-  - 日本节点
-  - 美国节点
-  - 韩国节点
-  - 手动切换
-  - DIRECT
-- name: 国内媒体
-  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/DomesticMedia.png
-  type: select
-  proxies:
-  - DIRECT
-  - 香港节点
-  - 台湾节点
-  - 狮城节点
-  - 日本节点
-  - 手动切换
-- name: 谷歌FCM
-  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google_Search.png
-  type: select
-  proxies:
-  - DIRECT
-  - 节点选择
-  - 美国节点
-  - 香港节点
-  - 台湾节点
-  - 狮城节点
-  - 日本节点
-  - 韩国节点
-  - 手动切换
-- name: 微软Bing
-  icon: https://testingcf.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/bing.png
-  type: select
-  proxies:
-  - DIRECT
-  - 节点选择
-  - 美国节点
-  - 香港节点
-  - 台湾节点
-  - 狮城节点
-  - 日本节点
-  - 韩国节点
-  - 手动切换
-- name: 微软云盘
-  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/OneDrive.png
-  type: select
-  proxies:
-  - DIRECT
-  - 节点选择
-  - 美国节点
-  - 香港节点
-  - 台湾节点
-  - 狮城节点
-  - 日本节点
-  - 韩国节点
-  - 手动切换
-- name: 微软服务
-  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Microsoft.png
-  type: select
-  proxies:
-  - 节点选择
-  - DIRECT
-  - 美国节点
-  - 香港节点
-  - 台湾节点
-  - 狮城节点
-  - 日本节点
-  - 韩国节点
-  - 手动切换
-- name: 苹果服务
-  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Apple.png
-  type: select
-  proxies:
-  - DIRECT
-  - 节点选择
-  - 美国节点
-  - 香港节点
-  - 台湾节点
-  - 狮城节点
-  - 日本节点
-  - 韩国节点
-  - 手动切换
-- name: 游戏平台
-  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Game.png
-  type: select
-  proxies:
-  - DIRECT
-  - 节点选择
-  - 美国节点
-  - 香港节点
-  - 台湾节点
-  - 狮城节点
-  - 日本节点
-  - 韩国节点
-  - 手动切换
-- name: 网易音乐
-  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Netease_Music.png
-  type: select
-  include-all: true
-  filter: (?i)网易|音乐|NetEase|Music
-  proxies:
-  - DIRECT
-  - 节点选择
-  - 自动选择
-- name: 全球直连
-  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Direct.png
-  type: select
-  proxies:
-  - DIRECT
-  - 节点选择
-  - 自动选择
-- name: 广告拦截
-  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/AdBlack.png
-  type: select
-  proxies:
-  - REJECT
-  - DIRECT
-- name: 应用净化
-  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hijacking.png
-  type: select
-  proxies:
-  - REJECT
-  - DIRECT
-- name: 漏网之鱼
-  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Final.png
-  type: select
-  proxies:
-  - 节点选择
-  - 自动选择
-  - DIRECT
-  - 香港节点
-  - 台湾节点
-  - 狮城节点
-  - 日本节点
-  - 美国节点
-  - 韩国节点
-  - 手动切换
-- name: 香港节点
-  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hong_Kong.png
-  include-all: true
-  filter: (?i)港|HK|hk|Hong Kong|HongKong|hongkong
-  type: url-test
-  interval: 300
-  tolerance: 50
-- name: 日本节点
-  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Japan.png
-  include-all: true
-  filter: (?i)日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan
-  type: url-test
-  interval: 300
-  tolerance: 50
-- name: 美国节点
-  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/United_States.png
-  include-all: true
-  filter: (?i)美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States
-  type: url-test
-  interval: 300
-  tolerance: 50
-- name: 台湾节点
-  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Taiwan.png
-  include-all: true
-  filter: (?i)台|新北|彰化|TW|Taiwan
-  type: url-test
-  interval: 300
-  tolerance: 50
-- name: 狮城节点
-  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Singapore.png
-  include-all: true
-  filter: (?i)新加坡|坡|狮城|SG|Singapore
-  type: url-test
-  interval: 300
-  tolerance: 50
-- name: 韩国节点
-  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Korea.png
-  include-all: true
-  filter: (?i)KR|Korea|KOR|首尔|韩|韓
-  type: url-test
-  interval: 300
-  tolerance: 50
-- name: 奈飞节点
-  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Netflix.png
-  include-all: true
-  filter: (?i)NF|奈飞|解锁|Netflix|NETFLIX|Media
-  type: select
-- name: GLOBAL
-  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Global.png
-  include-all: true
-  type: select
-  proxies:
-  - 节点选择
-  - 手动切换
-  - 自动选择
-  - 电报消息
-  - OpenAi
-  - 油管视频
-  - 奈飞视频
-  - 巴哈姆特
-  - 哔哩哔哩
-  - 国外媒体
-  - 国内媒体
-  - 谷歌FCM
-  - 微软Bing
-  - 微软云盘
-  - 微软服务
-  - 苹果服务
-  - 游戏平台
-  - 网易音乐
-  - 全球直连
-  - 广告拦截
-  - 应用净化
-  - 漏网之鱼
-  - 香港节点
-  - 日本节点
-  - 美国节点
-  - 台湾节点
-  - 狮城节点
-  - 韩国节点
-  - 奈飞节点
+  - name: 节点选择
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Proxy.png
+    type: select
+    proxies:
+      - 自动选择
+      - 香港节点
+      - 台湾节点
+      - 狮城节点
+      - 日本节点
+      - 美国节点
+      - 韩国节点
+      - 手动切换
+      - DIRECT
+  - name: 手动切换
+    icon: https://testingcf.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/select.png
+    include-all: true
+    type: select
+  - name: 自动选择
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Auto.png
+    type: url-test
+    include-all: true
+    interval: 300
+    tolerance: 50
+  - name: 电报消息
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Telegram.png
+    type: select
+    proxies:
+      - 节点选择
+      - 自动选择
+      - 狮城节点
+      - 香港节点
+      - 台湾节点
+      - 日本节点
+      - 美国节点
+      - 韩国节点
+      - 手动切换
+      - DIRECT
+  - name: OpenAi
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bot.png
+    type: select
+    proxies:
+      - 节点选择
+      - 自动选择
+      - 狮城节点
+      - 香港节点
+      - 台湾节点
+      - 日本节点
+      - 美国节点
+      - 韩国节点
+      - 手动切换
+      - DIRECT
+  - name: 油管视频
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/YouTube.png
+    type: select
+    proxies:
+      - 节点选择
+      - 自动选择
+      - 狮城节点
+      - 香港节点
+      - 台湾节点
+      - 日本节点
+      - 美国节点
+      - 韩国节点
+      - 手动切换
+      - DIRECT
+  - name: 奈飞视频
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Netflix.png
+    type: select
+    proxies:
+      - 节点选择
+      - 自动选择
+      - 奈飞节点
+      - 狮城节点
+      - 香港节点
+      - 台湾节点
+      - 日本节点
+      - 美国节点
+      - 韩国节点
+      - 手动切换
+      - DIRECT
+  - name: 巴哈姆特
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bahamut.png
+    type: select
+    proxies:
+      - 台湾节点
+      - 节点选择
+      - 手动切换
+      - DIRECT
+  - name: 哔哩哔哩
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/bilibili.png
+    type: select
+    proxies:
+      - 全球直连
+      - 台湾节点
+      - 香港节点
+  - name: 国外媒体
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/ForeignMedia.png
+    type: select
+    proxies:
+      - 节点选择
+      - 自动选择
+      - 香港节点
+      - 台湾节点
+      - 狮城节点
+      - 日本节点
+      - 美国节点
+      - 韩国节点
+      - 手动切换
+      - DIRECT
+  - name: 国内媒体
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/DomesticMedia.png
+    type: select
+    proxies:
+      - DIRECT
+      - 香港节点
+      - 台湾节点
+      - 狮城节点
+      - 日本节点
+      - 手动切换
+  - name: 谷歌FCM
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google_Search.png
+    type: select
+    proxies:
+      - DIRECT
+      - 节点选择
+      - 美国节点
+      - 香港节点
+      - 台湾节点
+      - 狮城节点
+      - 日本节点
+      - 韩国节点
+      - 手动切换
+  - name: 微软Bing
+    icon: https://testingcf.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/bing.png
+    type: select
+    proxies:
+      - DIRECT
+      - 节点选择
+      - 美国节点
+      - 香港节点
+      - 台湾节点
+      - 狮城节点
+      - 日本节点
+      - 韩国节点
+      - 手动切换
+  - name: 微软云盘
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/OneDrive.png
+    type: select
+    proxies:
+      - DIRECT
+      - 节点选择
+      - 美国节点
+      - 香港节点
+      - 台湾节点
+      - 狮城节点
+      - 日本节点
+      - 韩国节点
+      - 手动切换
+  - name: 微软服务
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Microsoft.png
+    type: select
+    proxies:
+      - 节点选择
+      - DIRECT
+      - 美国节点
+      - 香港节点
+      - 台湾节点
+      - 狮城节点
+      - 日本节点
+      - 韩国节点
+      - 手动切换
+  - name: 苹果服务
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Apple.png
+    type: select
+    proxies:
+      - DIRECT
+      - 节点选择
+      - 美国节点
+      - 香港节点
+      - 台湾节点
+      - 狮城节点
+      - 日本节点
+      - 韩国节点
+      - 手动切换
+  - name: 游戏平台
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Game.png
+    type: select
+    proxies:
+      - DIRECT
+      - 节点选择
+      - 美国节点
+      - 香港节点
+      - 台湾节点
+      - 狮城节点
+      - 日本节点
+      - 韩国节点
+      - 手动切换
+  - name: 网易音乐
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Netease_Music.png
+    type: select
+    include-all: true
+    filter: (?i)网易|音乐|NetEase|Music
+    proxies:
+      - DIRECT
+      - 节点选择
+      - 自动选择
+  - name: 全球直连
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Direct.png
+    type: select
+    proxies:
+      - DIRECT
+      - 节点选择
+      - 自动选择
+  - name: 广告拦截
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/AdBlack.png
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 应用净化
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hijacking.png
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 漏网之鱼
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Final.png
+    type: select
+    proxies:
+      - 节点选择
+      - 自动选择
+      - DIRECT
+      - 香港节点
+      - 台湾节点
+      - 狮城节点
+      - 日本节点
+      - 美国节点
+      - 韩国节点
+      - 手动切换
+  - name: 香港节点
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hong_Kong.png
+    include-all: true
+    filter: (?i)港|HK|hk|Hong Kong|HongKong|hongkong
+    type: url-test
+    interval: 300
+    tolerance: 50
+  - name: 日本节点
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Japan.png
+    include-all: true
+    filter: (?i)日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan
+    type: url-test
+    interval: 300
+    tolerance: 50
+  - name: 美国节点
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/United_States.png
+    include-all: true
+    filter: (?i)美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States
+    type: url-test
+    interval: 300
+    tolerance: 50
+  - name: 台湾节点
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Taiwan.png
+    include-all: true
+    filter: (?i)台|新北|彰化|TW|Taiwan
+    type: url-test
+    interval: 300
+    tolerance: 50
+  - name: 狮城节点
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Singapore.png
+    include-all: true
+    filter: (?i)新加坡|坡|狮城|SG|Singapore
+    type: url-test
+    interval: 300
+    tolerance: 50
+  - name: 韩国节点
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Korea.png
+    include-all: true
+    filter: (?i)KR|Korea|KOR|首尔|韩|韓
+    type: url-test
+    interval: 300
+    tolerance: 50
+  - name: 奈飞节点
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Netflix.png
+    include-all: true
+    filter: (?i)NF|奈飞|解锁|Netflix|NETFLIX|Media
+    type: select
+  - name: GLOBAL
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Global.png
+    include-all: true
+    type: select
+    proxies:
+      - 节点选择
+      - 手动切换
+      - 自动选择
+      - 电报消息
+      - OpenAi
+      - 油管视频
+      - 奈飞视频
+      - 巴哈姆特
+      - 哔哩哔哩
+      - 国外媒体
+      - 国内媒体
+      - 谷歌FCM
+      - 微软Bing
+      - 微软云盘
+      - 微软服务
+      - 苹果服务
+      - 游戏平台
+      - 网易音乐
+      - 全球直连
+      - 广告拦截
+      - 应用净化
+      - 漏网之鱼
+      - 香港节点
+      - 日本节点
+      - 美国节点
+      - 台湾节点
+      - 狮城节点
+      - 韩国节点
+      - 奈飞节点
+
 rule-providers:
   GoogleCNProxyIP:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/GoogleCNProxyIP.list
@@ -1634,43 +553,44 @@ rule-providers:
     interval: 86400
     format: text
     type: http
+
 rules:
-- DOMAIN-SUFFIX,xn--ngstr-lra8j.com,谷歌FCM
-- DOMAIN-SUFFIX,services.googleapis.cn,谷歌FCM
-- PROCESS-NAME,VALORANT-Win64-Shipping.exe,DIRECT
-- PROCESS-NAME,RiotClientServices.exe,DIRECT
-- PROCESS-NAME,Riot Client.exe,DIRECT
-- RULE-SET,GoogleCNProxyIP,全球直连
-- RULE-SET,ChinaIp,全球直连
-- RULE-SET,LocalAreaNetwork,全球直连
-- RULE-SET,UnBan,全球直连
-- RULE-SET,ChinaDomain,全球直连
-- RULE-SET,ChinaCompanyIp,全球直连
-- RULE-SET,Download,全球直连
-- RULE-SET,GoogleCN,全球直连
-- RULE-SET,SteamCN,全球直连
-- RULE-SET,BanAD,广告拦截
-- RULE-SET,BanProgramAD,应用净化
-- RULE-SET,GoogleFCM,谷歌FCM
-- RULE-SET,Bing,微软Bing
-- RULE-SET,OneDrive,微软云盘
-- RULE-SET,Microsoft,微软服务
-- RULE-SET,Apple,苹果服务
-- RULE-SET,Telegram,电报消息
-- RULE-SET,OpenAi,OpenAi
-- RULE-SET,NetEaseMusic,网易音乐
-- RULE-SET,Epic,游戏平台
-- RULE-SET,Origin,游戏平台
-- RULE-SET,Sony,游戏平台
-- RULE-SET,Steam,游戏平台
-- RULE-SET,Nintendo,游戏平台
-- RULE-SET,YouTube,油管视频
-- RULE-SET,Netflix,奈飞视频
-- RULE-SET,Bahamut,巴哈姆特
-- RULE-SET,BilibiliHMT,哔哩哔哩
-- RULE-SET,Bilibili,哔哩哔哩
-- RULE-SET,ChinaMedia,国内媒体
-- RULE-SET,ProxyMedia,国外媒体
-- RULE-SET,ProxyGFWlist,节点选择
-- GEOIP,CN,全球直连
-- MATCH,漏网之鱼
+  - "DOMAIN-SUFFIX,xn--ngstr-lra8j.com,谷歌FCM"
+  - "DOMAIN-SUFFIX,services.googleapis.cn,谷歌FCM"
+  - "PROCESS-NAME,VALORANT-Win64-Shipping.exe,DIRECT"
+  - "PROCESS-NAME,RiotClientServices.exe,DIRECT"
+  - "PROCESS-NAME,Riot Client.exe,DIRECT"
+  - "RULE-SET,GoogleCNProxyIP,全球直连"
+  - "RULE-SET,ChinaIp,全球直连"
+  - "RULE-SET,LocalAreaNetwork,全球直连"
+  - "RULE-SET,UnBan,全球直连"
+  - "RULE-SET,ChinaDomain,全球直连"
+  - "RULE-SET,ChinaCompanyIp,全球直连"
+  - "RULE-SET,Download,全球直连"
+  - "RULE-SET,GoogleCN,全球直连"
+  - "RULE-SET,SteamCN,全球直连"
+  - "RULE-SET,BanAD,广告拦截"
+  - "RULE-SET,BanProgramAD,应用净化"
+  - "RULE-SET,GoogleFCM,谷歌FCM"
+  - "RULE-SET,Bing,微软Bing"
+  - "RULE-SET,OneDrive,微软云盘"
+  - "RULE-SET,Microsoft,微软服务"
+  - "RULE-SET,Apple,苹果服务"
+  - "RULE-SET,Telegram,电报消息"
+  - "RULE-SET,OpenAi,OpenAi"
+  - "RULE-SET,NetEaseMusic,网易音乐"
+  - "RULE-SET,Epic,游戏平台"
+  - "RULE-SET,Origin,游戏平台"
+  - "RULE-SET,Sony,游戏平台"
+  - "RULE-SET,Steam,游戏平台"
+  - "RULE-SET,Nintendo,游戏平台"
+  - "RULE-SET,YouTube,油管视频"
+  - "RULE-SET,Netflix,奈飞视频"
+  - "RULE-SET,Bahamut,巴哈姆特"
+  - "RULE-SET,BilibiliHMT,哔哩哔哩"
+  - "RULE-SET,Bilibili,哔哩哔哩"
+  - "RULE-SET,ChinaMedia,国内媒体"
+  - "RULE-SET,ProxyMedia,国外媒体"
+  - "RULE-SET,ProxyGFWlist,节点选择"
+  - "GEOIP,CN,全球直连"
+  - "MATCH,漏网之鱼"
