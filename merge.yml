@@ -1,5 +1,5 @@
 dns:
-  enable: false
+  enable: true
   ipv6: true
   default-nameserver:
     - 223.5.5.5
@@ -609,5 +609,6 @@ rules:
   - "RULE-SET,ProxyGFWlist,节点选择"
   - "GEOIP,CN,全球直连"
   - "MATCH,漏网之鱼"
+
 
 
