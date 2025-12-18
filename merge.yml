@@ -1,26 +1,24 @@
+# dns泄露部分
 dns:
   enable: true
   ipv6: true
+  prefer-h3: true
   default-nameserver:
-    - 223.5.5.5
-    - 119.29.29.29
-    - 8.8.8.8
-  enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
-  use-hosts: true
+    - "tls://223.5.5.5:853"      # 阿里 IPv4
+    - "tls://223.6.6.6:853"
+    - "tls://[2400:3200::1]:853" # 阿里 IPv6
+    - "tls://[2402:4e00::]:853"  # 腾讯 IPv6
   nameserver:
-    - https://doh.pub/dns-query
+    - https://cloudflare-dns.com/dns-query
+    - https://dns.google/dns-query
+  proxy-server-nameserver:
     - https://dns.alidns.com/dns-query
-  fallback:
-    - https://doh.dns.sb/dns-query
-    - https://dns.cloudflare.com/dns-query
-    - https://dns.twnic.tw/dns-query
-    - tls://8.8.4.4:853
-  fallback-filter:
-    geoip: true
-    ipcidr:
-      - 240.0.0.0/4
-      - 0.0.0.0/32
+    - https://doh.pub/dns-query
+  direct-nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+  respect-rules: true
+ipv6: true
 proxy-groups:
   - name: 节点选择
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Proxy.png
