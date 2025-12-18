@@ -2,25 +2,25 @@ dns:
   enable: false
   ipv6: true
   default-nameserver:
-  - 223.5.5.5
-  - 119.29.29.29
-  - 8.8.8.8
+    - 223.5.5.5
+    - 119.29.29.29
+    - 8.8.8.8
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   use-hosts: true
   nameserver:
-  - https://doh.pub/dns-query
-  - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
   fallback:
-  - https://doh.dns.sb/dns-query
-  - https://dns.cloudflare.com/dns-query
-  - https://dns.twnic.tw/dns-query
-  - tls://8.8.4.4:853
+    - https://doh.dns.sb/dns-query
+    - https://dns.cloudflare.com/dns-query
+    - https://dns.twnic.tw/dns-query
+    - tls://8.8.4.4:853
   fallback-filter:
     geoip: true
     ipcidr:
-    - 240.0.0.0/4
-    - 0.0.0.0/32
+      - 240.0.0.0/4
+      - 0.0.0.0/32
 proxy-groups:
   - name: 节点选择
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Proxy.png
@@ -609,6 +609,5 @@ rules:
   - "RULE-SET,ProxyGFWlist,节点选择"
   - "GEOIP,CN,全球直连"
   - "MATCH,漏网之鱼"
-
 
 
