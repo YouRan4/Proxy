@@ -569,10 +569,11 @@ rule-providers:
     type: http
 
 rules:
+  - "DOMAIN-SUFFIX,5eplay.com,全球直连"
   - "DOMAIN-SUFFIX,xn--ngstr-lra8j.com,谷歌FCM"
   - "DOMAIN-SUFFIX,services.googleapis.cn,谷歌FCM"
-  - "PROCESS-NAME,VALORANT-Win64-Shipping.exe,DIRECT"
-  - "PROCESS-NAME,RiotClientServices.exe,DIRECT"
+  - "PROCESS-NAME,VALORANT-Win64-Shipping.exe,全球直连"
+  - "PROCESS-NAME,RiotClientServices.exe,全球直连"
   - "PROCESS-NAME,Riot Client.exe,DIRECT"
   - "RULE-SET,GoogleCNProxyIP,全球直连"
   - "RULE-SET,ChinaIp,全球直连"
