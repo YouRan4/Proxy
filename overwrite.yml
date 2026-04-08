@@ -20,16 +20,19 @@ dns!:
 
 proxy-groups:
   - name: 手动切换
+    icon: https://testingcf.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/select.png
     include-all: true
     type: select
     
   - name: 自动选择
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Auto.png
     type: url-test
     include-all: true
     interval: 300
     tolerance: 50
   # ==================== Proxies 主组（汇总所有地区） ====================
   - name: Proxies
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Proxy.png
     type: select
     proxies:
       - 手动切换
@@ -44,6 +47,7 @@ proxy-groups:
 
   # ==================== 服务策略组（按图片名称生成） ====================
   - name: YouTube
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/YouTube.png
     type: select
     proxies:
       - Proxies
@@ -59,6 +63,7 @@ proxy-groups:
       - DIRECT
 
   - name: Disney
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Disney.png
     type: select
     proxies:
       - Proxies
@@ -74,6 +79,7 @@ proxy-groups:
       - DIRECT
 
   - name: Hbomax
+    icon: https://www.hbomax.com/img/hbomax/logo_nav_bar.png
     type: select
     proxies:
       - Proxies
@@ -89,6 +95,7 @@ proxy-groups:
       - DIRECT
 
   - name: Netflix
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Netflix.png
     type: select
     proxies:
       - Proxies
@@ -104,6 +111,7 @@ proxy-groups:
       - DIRECT
 
   - name: Bahamut
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bahamut.png
     type: select
     proxies:
       - Proxies
@@ -119,6 +127,7 @@ proxy-groups:
       - DIRECT
 
   - name: Bilibili
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/bilibili_3.png
     type: select
     proxies:
       - Proxies
@@ -134,6 +143,7 @@ proxy-groups:
       - DIRECT
 
   - name: Spotify
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Spotify.png
     type: select
     proxies:
       - Proxies
@@ -149,6 +159,7 @@ proxy-groups:
       - DIRECT
 
   - name: Steam
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Steam.png
     type: select
     proxies:
       - Proxies
@@ -164,6 +175,7 @@ proxy-groups:
       - DIRECT
 
   - name: Telegram
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Telegram.png
     type: select
     proxies:
       - Proxies
@@ -179,6 +191,7 @@ proxy-groups:
       - DIRECT
 
   - name: Google
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google_Search.png
     type: select
     proxies:
       - Proxies
@@ -194,6 +207,7 @@ proxy-groups:
       - DIRECT
 
   - name: Microsoft
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Microsoft.png
     type: select
     proxies:
       - Proxies
@@ -209,6 +223,7 @@ proxy-groups:
       - DIRECT
 
   - name: OpenAI
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bot.png
     type: select
     proxies:
       - Proxies
@@ -224,6 +239,7 @@ proxy-groups:
       - DIRECT
 
   - name: PayPal
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/PayPal.png
     type: select
     proxies:
       - Proxies
@@ -239,6 +255,7 @@ proxy-groups:
       - DIRECT
 
   - name: Apple
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Apple.png
     type: select
     proxies:
       - Proxies
@@ -255,6 +272,7 @@ proxy-groups:
 
   # ==================== 地区组（filter 自动过滤订阅节点） ====================
   - name: HK
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hong_Kong.png
     include-all: true
     filter: (?i)港|HK|hk|Hong Kong|HongKong|hongkong
     type: url-test
@@ -262,6 +280,7 @@ proxy-groups:
     tolerance: 50
 
   - name: JP
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Japan.png
     include-all: true
     filter: (?i)日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan
     type: url-test
@@ -269,6 +288,7 @@ proxy-groups:
     tolerance: 50
 
   - name: SG
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Singapore.png
     include-all: true
     filter: (?i)新加坡|坡|狮城|SG|Singapore
     type: url-test
@@ -276,6 +296,7 @@ proxy-groups:
     tolerance: 50
 
   - name: TW
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Taiwan.png
     include-all: true
     filter: (?i)台|新北|彰化|TW|Taiwan
     type: url-test
@@ -284,6 +305,7 @@ proxy-groups:
 
 
   - name: US
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/United_States.png
     include-all: true
     filter: (?i)美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States
     type: url-test
@@ -291,6 +313,7 @@ proxy-groups:
     tolerance: 50
 
   - name: KR
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Korea.png
     include-all: true
     filter: (?i)KR|Korea|KOR|首尔|韩|韓
     type: url-test
@@ -300,6 +323,7 @@ proxy-groups:
 
   # ==================== Final 组（兜底组） ====================
   - name: Final
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Final.png
     type: select
     proxies:
       - Proxies
