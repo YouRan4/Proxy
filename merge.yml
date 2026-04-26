@@ -328,6 +328,15 @@ proxy-groups:
     proxies:
       - Proxies
       - DIRECT
+
+rule-providers:
+  directList:
+    type: http
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/direct-list.txt"
+    path: ./ruleset/direct.yaml
+    interval: 86400
+
 rules:
  - DOMAIN,app.adjust.com,DIRECT
  - DOMAIN,app.appsflyer.com,DIRECT
@@ -342,6 +351,7 @@ rules:
  - DOMAIN,livew.l.qq.com,DIRECT
  - DOMAIN,vd.l.qq.com,DIRECT
  - DOMAIN,vi.l.qq.com,DIRECT
+ - DOMAIN-SUFFIX,qq.com,DIRECT
  - DOMAIN,analytics.strava.com,DIRECT
  - DOMAIN,msg.umeng.com,DIRECT
  - DOMAIN,msg.umengcloud.com,DIRECT
@@ -4544,7 +4554,6 @@ rules:
  - DOMAIN-SUFFIX,springsunday.net,DIRECT
  - DOMAIN-SUFFIX,tjupt.org,DIRECT
  - DOMAIN-SUFFIX,totheglory.im,DIRECT
- - GEOIP,CN,DIRECT,no-resolve
  - DOMAIN-SUFFIX,local,DIRECT
  - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
  - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
@@ -4555,5 +4564,9 @@ rules:
  - IP-CIDR6,fc00::/7,DIRECT,no-resolve
  - IP-CIDR6,fe80::/10,DIRECT,no-resolve
  - IP-CIDR6,fd00::/8,DIRECT,no-resolve
- - GEOIP,CN,DIRECT
- - MATCH,Final
+ - RULE-SET,directList,DIRECT"
+ - GEOSITE,category-games@cn,DIRECT"
+ - GEOIP,CN,DIRECT"
+ - GEOSITE,private,DIRECT"
+ - GEOSITE,cn,DIRECT"
+ - MATCH,Final"
