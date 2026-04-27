@@ -79,7 +79,7 @@ proxy-groups:
       - DIRECT
 
   - name: Hbomax
-    icon: https://www.hbomax.com/img/hbomax/logo_nav_bar.png
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/HBO_Max.png
     type: select
     proxies:
       - Proxies
@@ -127,7 +127,7 @@ proxy-groups:
       - DIRECT
 
   - name: Bilibili
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/bilibili_3.png
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/bilibili.png
     type: select
     proxies:
       - Proxies
@@ -223,7 +223,7 @@ proxy-groups:
       - DIRECT
 
   - name: OpenAI
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bot.png
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/ChatGPT.png
     type: select
     proxies:
       - Proxies
