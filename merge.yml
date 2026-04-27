@@ -4564,6 +4564,9 @@ rules:
  - IP-CIDR6,fc00::/7,DIRECT,no-resolve
  - IP-CIDR6,fe80::/10,DIRECT,no-resolve
  - IP-CIDR6,fd00::/8,DIRECT,no-resolve
+ - DOMAIN-SUFFIX,amd.com,Proxies
+ - DOMAIN-SUFFIX,nvidia.com,Proxies
+ - DOMAIN-SUFFIX,intel.com,Proxies
  - RULE-SET,directList,DIRECT
  - GEOSITE,category-games@cn,DIRECT
  - GEOIP,CN,DIRECT

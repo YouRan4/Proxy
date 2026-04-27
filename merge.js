@@ -1,9 +1,20 @@
 // ==================== 配置区 ====================
 // 1. 定义需要单独策略组的服务
 const services = [
-    'YouTube', 'Disney', 'Hbomax', 'Netflix', 'Bahamut',
-    'Bilibili', 'Spotify', 'Steam', 'Telegram', 'Google',
-    'Microsoft', 'OpenAI', 'PayPal', 'Apple'
+    { name: 'YouTube' },
+    { name: 'Disney' },
+    { name: 'Hbomax' ,alias: 'HBO_Max'},
+    { name: 'Netflix' },
+    { name: 'Bahamut' },
+    { name: 'Bilibili' ,alias: 'bilibili'},
+    { name: 'Spotify' },
+    { name: 'Steam' },
+    { name: 'Telegram' },
+    { name: 'Google' },
+    { name: 'Microsoft' },
+    { name: 'OpenAI' ,alias: 'ChatGPT'},
+    { name: 'PayPal' },
+    { name: 'Apple' }
 ];
 
 // 2. 定义地区过滤组
@@ -68,12 +79,13 @@ function main(config) {
     ];
 
     // 遍历生成服务组（YouTube, Netflix 等）
-    services.forEach(name => {
+    services.forEach(service => {
+        const displayName = service.alias || service.name;
         proxyGroups.push({
-            name: name,
+            name: service.name,
             type: "select",
             proxies: ["Proxies", "手动切换", "自动选择", ...regions.map(r => r.name), "Final", "DIRECT"],
-            icon: `https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/${name}.png`
+            icon: `https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/${displayName}.png`
         });
     });
 
@@ -4336,6 +4348,9 @@ function main(config) {
         "IP-CIDR6,fc00::/7,DIRECT,no-resolve",
         "IP-CIDR6,fe80::/10,DIRECT,no-resolve",
         "IP-CIDR6,fd00::/8,DIRECT,no-resolve",
+        "DOMAIN-SUFFIX,amd.com,Proxies",
+        "DOMAIN-SUFFIX,nvidia.com,Proxies",
+        "DOMAIN-SUFFIX,intel.com,Proxies",
         "RULE-SET,directList,DIRECT",
         "GEOSITE,category-games@cn,DIRECT",
         "GEOIP,CN,DIRECT",
