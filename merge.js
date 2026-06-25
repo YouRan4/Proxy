@@ -3299,6 +3299,7 @@ function main(config) {
         "PROCESS-NAME,OneDrive,Microsoft",
         "PROCESS-NAME,OneDriveUpdater,Microsoft",
         "DOMAIN,labs.google,OpenAI",
+        "DOMAIN,opencode.ai,OpenAI",
         "DOMAIN,browser-intake-datadoghq.com,OpenAI",
         "DOMAIN,chat.openai.com.cdn.cloudflare.net,OpenAI",
         "DOMAIN,gemini.google.com,OpenAI",
