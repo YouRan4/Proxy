@@ -191,7 +191,7 @@ proxy-groups:
       - DIRECT
 
   - name: Google
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google_Search.png
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google.png
     type: select
     proxies:
       - Proxies
@@ -334,7 +334,7 @@ rule-providers:
     type: http
     behavior: classical
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/direct-list.txt"
-    path: ./ruleset/direct.yaml
+    path: ./ruleset/proxy.yaml
     interval: 86400
 
 rules:
